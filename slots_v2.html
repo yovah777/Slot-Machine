@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <script src="js/slots_v2.js" type="text/javascript"></script> 
+    
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slots_v2.css">
+    <title>Play Slot Machine</title>
+  </head>
+  <body class="p-3 mb-2 bg-info text-danger">
+	<div class="container bg-primary">
+        <div class="row text-center">
+			<div class="col-12">
+                <h1 id="display-3 text-danger">Slot Machine</h1>
+                <h3 id="text-muted">Get 3 of a kind in a row to win! </h3>
+            </div>
+        </div>
+  
+		<div class="p-3 mb-2 bg-primary text-white row">
+            <div class="col-lg-8 border"> 
+                <div class="row">
+                    <div class="col-4 border"><img class="img-fluid" id="fruit1" src="img/cherry.png" alt="A picture of cherries"></div>
+                    <div class="col-4 border"><img class="img-fluid" id="fruit2" src="img/lemon.png" alt="A picture of lemon"></div>
+                    <div class="col-4 border"><img class="img-fluid" id="fruit3" src="img/num7.png" alt="A picture of number 7"></div>
+			     </div>
+            </div>
+				<div id="betbox" class="col-lg-4 border text-center">
+						<h3 class="text-dark" id="playerpot">You have $<span id ="pot">50</span></h3>
+						<p class="text-dark" id="select">Bet Money (Select amount)</p>
+						
+						
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+                              <label class="btn btn-outline-success">
+                                <input type="radio" name="options" id="option1" checked value="1"> $1
+                              </label>
+                              <label class="btn btn-outline-warning">
+                                <input type="radio" name="options" id="option2" checked value="3"> $3
+                              </label>
+                              <label class="btn btn-outline-danger">
+                                <input type="radio" name="options" id="option3" checked value="10"> $10
+                              </label>
+                            </div>
+                    
+						<div>
+							<button  id="spin" type="button" class="btn btn-outline-secondary" onclick="spin();">Spin</button>
+						</div>
+				</div>
+		</div>
+    </div>
+         
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
