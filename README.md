@@ -1,2 +1,2 @@
 # Web-Programming
-assignments completed for web programming
+Assignments completed for Fall 2018 course web programming.
